@@ -12,6 +12,7 @@ export default function ListItem({item, deleteItem}) {
           size={20}
           color="firebrick"
           onPress={() => deleteItem(item.id)}
+          style={styles.awesome}
         />
       </View>
     </TouchableOpacity>
@@ -35,5 +36,6 @@ const styles = StyleSheet.create({
   },
   awesome: {
     color: 'red',
+    padding: 4,
   },
 });
